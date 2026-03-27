@@ -3,7 +3,7 @@ package week2;
 	public class Student{
 		private String name;
 		private int id;
-		private int yearofstudy;
+		private int yearofstudy = 1;
 		
 		public Student(String name, int id, int yearofstudy) {
 			this.name = name;
@@ -19,8 +19,8 @@ package week2;
 			return id;
 		}
 		
-		public int getyearofstudy() {
-			return yearofstudy;
+		public int incrementyearofstudy() {
+			return yearofstudy++;
 		}
 	
 		 
@@ -29,8 +29,9 @@ package week2;
 		
 		System.out.println(s.getname());
 		System.out.println(s.getid());
-		System.out.println(s.getyearofstudy());
 		
+		s.incrementyearofstudy();
+		System.out.println(s.incrementyearofstudy());
 	}
 		
 

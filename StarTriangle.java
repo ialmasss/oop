@@ -8,17 +8,17 @@ public class StarTriangle {
 	}
 	
 	public String toString(){
-		StringBuilder result = new StringBuilder();
+		String result = "";
 		
 		for (int i = 1; i <= width; i++) {
 			for (int j = 1; j <= i; j++) {
-				result.append("[*]");
+				result+="[*]";
 			}
 			
-			result.append("\n");
+			result+="\n";
 		}
 		
-		return result.toString();
+		return result;
 	}
 	
 	
